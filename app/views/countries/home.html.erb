@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<meta charset="UTF-8">
+			<title></title>
+		</head>
+		<body>
+
+
+		<h2>List of countries</h2>
+
+		<body background=""></body>
+
+		<ul>
+				<% @the_places.each do |place|%>
+			<li>
+					<a href="/countries/<%= place.id %>">
+					<button><%=place.name%></li>
+				<% end %>
+		</ul>		
+
+
+		</body>
+</html>
