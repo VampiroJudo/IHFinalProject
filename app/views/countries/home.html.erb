@@ -7,7 +7,6 @@
 		<body>
 
 
-		<h2>List of countries</h2>
 
 		<body background=""></body>
 
@@ -15,7 +14,9 @@
 				<% @the_places.each do |place|%>
 			<li>
 					<a href="/countries/<%= place.id %>">
-					<button><%=place.name%></li>
+					<button><%=place.name%></button>	
+
+			</li>
 				<% end %>
 		</ul>		
 
