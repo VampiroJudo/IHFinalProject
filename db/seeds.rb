@@ -34,7 +34,20 @@ styleD = FightStyle.create!(name: "Brazilian Jiu-jitsu", description: "Brazilian
 styleE = FightStyle.create!(name: "Capoeira", description:" Capoeira is a Brazilian martial art with its roots originating in Angola and the Congo, 
 	that combines elements of dance, acrobatics and music. It was developed in Brazil mainly by West Africans, beginning in the 16th century and is known 
 	for quick and complex moves, using mainly power, speed, and leverage for a wide variety of kicks, spins, and highly mobile techniques.", country_id: 1),
-styleF = FightStyle.create!(name: "Shaolin KungFu")
+styleF = FightStyle.create!(name: "Shaolin KungFu", description: "Shaolin Kungfu refers to the traditional cultural system that has formed in the particular 
+	Buddhist cultural environment in Shaolin Temple of Songshan Mountain over long history. The martial arts practiced by monks in the Shaolin Temple are its 
+	major form of expression. There are 72 unique sets of skills and all kinds of special bodies of Kungfu techniques such as Qi Gong, grappling, wrestling, 
+	disjointing, attacking a vital point of the body.", country_id: 2),
+styleG = FightStyle.create!(name: "Tai Chi", description: "Tai Chi is an internal Chinese martial art practiced for both its defense training and its health benefits. 
+	Though originally conceived as a martial art, it is also typically practiced for a variety of other personal reasons: competitive wrestling in the format of pushing 
+	hands (tui shou), demonstration competitions, and achieving greater longevity. As a result, a multitude of training forms exist, both traditional and modern, which 
+	correspond to those aims with differing emphasis. Some training forms of t'ai chi ch'uan are especially known for being practiced with relatively slow movements.", country_id: 2),
+styleH = FightStyle.create!(name:"Sambo", description: "Sambo is a form of sport, self-defense, and combatives established in the former Soviet Union during the early twentieth century.
+    Under the leadership of Sambo’s forefathers V.S. Oshchepkov, V.A. Spiridinov, and A. A. Kharlampiev, indigenous fighting styles from regions including Japan, China, Mongolia, India,
+    Africa, Europe, North America, Caucasus, and Russia were studied and blended into what is now known as Sambo. After generations of civilian and military refinement, Sambo has evolved 
+    into an extremely formidable fighting art with principles applicable to martial artists of any style. Sambo’s arsenal includes, but is not limited to, strikes, joint locks, chokes, throws, 
+    ground fighting, and weapons.", country_id: 3),
+
 
 
 puts "done"
