@@ -12,5 +12,6 @@ $(document).on("turbolinks:load",function(){
   		// location.href ='/users/sign_in'
 		$(".js-login-modal").openModal();
   	})
+  	
  })
 

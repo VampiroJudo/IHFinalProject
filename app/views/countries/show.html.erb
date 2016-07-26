@@ -4,7 +4,7 @@
 
 	<% @the_arts.each do |art| %>
 	<li>
-		<%= art.name %>
+		<button><%= link_to "<%= art.name %>","/countries/:id/show/"  %></button>
 		<br>
 		<%= art.description %>
 		<br>
