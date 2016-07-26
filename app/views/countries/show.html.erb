@@ -1,14 +1,14 @@
-<h2>This will be the individual country page</h2>
+
 
 <ul>
 
 	<% @the_arts.each do |art| %>
 	<li>
-		
-			<% if 
-
-				<a href="/index/<%= art.id %>"></a>
-			<button><%= art.country_id %></button>
+		<a href="/index/<%= art.name%>"></a>
+		<br>
+		<button><%= art.name %></button>
+		<br>
+		<%= art.description %>
 	</li>
 	<% end %>	
 </ul>		

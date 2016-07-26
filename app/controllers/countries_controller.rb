@@ -9,14 +9,14 @@ class CountriesController < ApplicationController
 
 	def show
 		id = params[:id]
-		@the_places = Country.find(id)
+		country = Country.find_by(id)
+		@the_arts = FightStyle.where(country_id: id)
 		render "show"
 	end
 
 	
 	def index
-		id = params[:id]
-		@the_arts = FightStyle.find(id)
+	
 		render "index"
 	end
 end
