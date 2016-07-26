@@ -4,14 +4,14 @@
 
 	<% @the_arts.each do |art| %>
 	<li>
-		<a href="/index/<%= art.name%>"></a>
+		<%= art.name %>
 		<br>
-		<button><%= art.name %></button>
 		<%= art.description %>
-		
-		
+		<br>
+
 	</li>
 	<% end %>	
 </ul>		
+
 
 
