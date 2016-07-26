@@ -40,7 +40,7 @@ styleE = FightStyle.create!(name: "Capoeira", description:" Capoeira is a Brazil
 	for quick and complex moves, using mainly power, speed, and leverage for a wide variety of kicks, spins, and highly mobile techniques.", country_id: countryB.id)
 
 styleF = FightStyle.create!(name: "Shaolin KungFu", description: "Shaolin Kungfu refers to the traditional cultural system that has formed in the particular 
-	Buddhist cultural environment in Shaolin Temple of Songshan Mountain over long history. The martial arts practiced by monks in the Shaolin Temple are its 
+	Buddhist cultural environment in Shaolin Temple of Songshan Mountain. The martial arts practiced by monks in the Shaolin Temple are its 
 	major form of expression. There are 72 unique sets of skills and all kinds of special bodies of Kungfu techniques such as Qi Gong, grappling, wrestling, 
 	disjointing, attacking a vital point of the body.", country_id: countryC.id)
 
