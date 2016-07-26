@@ -12,4 +12,11 @@ class CountriesController < ApplicationController
 		@the_places = Country.find(id)
 		render "show"
 	end
+
+	
+	def index
+		id = params[:id]
+		@the_arts = FightStyle.find(id)
+		render "index"
+	end
 end

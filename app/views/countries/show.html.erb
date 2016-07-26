@@ -1,7 +1,16 @@
 <h2>This will be the individual country page</h2>
 
 <ul>
+
+	<% @the_arts.each do |art| %>
 	<li>
-		<%= @the_places.id %>		
+		
+			<% if 
+
+				<a href="/index/<%= art.id %>"></a>
+			<button><%= art.country_id %></button>
 	</li>
-</ul>
+	<% end %>	
+</ul>		
+
+
