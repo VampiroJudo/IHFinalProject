@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-		<meta charset="UTF-8">
-			<title></title>
-		</head>
-		<body>
-
-		<ul>
-		
-			<% @the_arts.each do |art| %>
-			<li>
-				<a href="/fight_styles/<%= art.id %>"></a>
-					<button><%= art.country_id %></button>
-			</li>
-		</ul>		
 
 
-		</body>
-</html>  
+<ul>
+
+	<% @the_arts.each do |art| %>
+	<li>
+		<a href="/fight_styles/<%= art.id %>"></a>
+			<button><%= art.country_id %></button>
+	</li>
+</ul>		

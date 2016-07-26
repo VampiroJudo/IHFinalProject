@@ -1,28 +1,91 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-		<meta charset="UTF-8">
-			<title></title>
-		</head>
-		<body background="">
 
-			<nav>
-    			<div class="nav-wrapper">
-      				<a href="#" class="brand-logo">Put logo here</a>
-     					 <ul id="nav-mobile" class="right hide-on-med-and-down">
-       						 <li><button class="sign_up_btn">Sign Up</button></li>
-       						 <li><button class="log_in">Log In</button></li>
-        					 
-      					</ul>
-   				 </div>
-  			</nav>
-        		<ul>
-					<% @the_places.each do |place|%>
-					<li>
-						<a href="/countries/<%= place.id %>">
-						<button id="country_btn"> <%=place.name%> </button>	
-					</li>
-						<% end %>
-				</ul>		
-		</body>
-	</html>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#" class="brand-logo">Put logo here</a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><button class="sign_up_btn">Sign Up</button></li>
+			<li><button class="log_in">Log In</button></li>
+
+		</ul>
+	</div>
+</nav>
+
+
+<ul>
+	<% @the_places.each do |place|%>
+		<li>
+			<a href="/countries/<%= place.id %>">
+				<button id="country_btn"> <%=place.name%> </button>	
+			</a>
+		</li>
+	<% end %>
+</ul>		
+
+
+<div class="modal js-sign-up-modal">
+	<form>
+		<div class="modal-content">
+			<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :name%><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+			
+
+			<input type="email" placeholder="blah@blah.com">
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
+				Submit
+			</a>
+		</div>
+    </form>
+</div>
+
+
+<div class="modal js-login-modal">
+	<form>
+		<div class="modal-content">
+			<h4>Login</h4>
+			<p>A bunch of text</p>
+
+			<input type="email" placeholder="blah@blah.com">
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
+				Submit
+			</a>
+		</div>
+    </form>
+</div>
