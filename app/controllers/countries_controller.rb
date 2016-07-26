@@ -19,4 +19,12 @@ class CountriesController < ApplicationController
 	
 		render "index"
 	end
+
+
+	def booking
+		
+		render "booking"
+
+	end
+
 end
