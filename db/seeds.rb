@@ -57,4 +57,14 @@ styleH = FightStyle.create!(name:"Sambo", description: "Sambo is a form of sport
 
 
 
+
+schoolA = Packages.create!(school: "The Kodokan", address: "1-16-30 Kasuga, Bunkyo 112-0003, Tokyo Prefecture", phone: +81 3-3811-7156, website: "http://kodokanjudoinstitute.org/")
+schoolB = Packages.create!(school: "JKA Headquarters Dojo", address: "2 Chome-23-15 Koraku, Bunkyo, Tokyo 112-0004, Japan", phone: +81-3-5800-3091, website: "http://jka.or.jp/en/")
+schoolC = Packages.create!(school: "Hombu Dojo", address: "17-18 Wakamatsucho, 新宿区 Tokyo 162-0056, Japan", phone: +81-3-3203-9236, website: "http://www.aikikai.or.jp/eng/")
+schoolD = Packages.create!(school: "Gracie Humaitá", address: "Rua Humaitá, 52 - Humaitá, Rio de Janeiro - RJ, 22261-001, Brazil", phone: +55 21 2266-6094, website: "http://graciehumaita.com/site/en/academias/humaita/")
+schoolE = Packages.create!(school: "Grupo Internacional de Capoeira Topázio", address:"Praça de Santana, 78 - Nazaré, Salvador - BA, 40040-460, Brazil", phone: +55 71 3321-3366, website:"http://www.capoeiratopazio.com.br/")
+schoolF = Packages.create!(school: "Shaolin Temple", address: "Dengfeng Ave, Dengfeng, Zhengzhou, Henan, China", phone: +86 371 6274 5166, website:"http://www.shaolin.org.cn/")
+schoolG = Packages.create!(school: "Chen Bing Taiji Academy", address: "Chenjiagou, Henan, China", phone:(+86186) 10069300, website:"http://www.scic-beijing.com/MartialArts/default.asp")
+school H =Packages.create!(school: "Sambo-Seventy", address: "ul. Akademika Vinogradova, 4Б, Moscow, Russia, 117133", phone: +7 495 339-69-44, website: "http://xn---70-5cdf9dpu.xn--p1ai/")
+
 puts "DONE"

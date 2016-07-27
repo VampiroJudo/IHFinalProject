@@ -13,10 +13,10 @@ $(document).on("turbolinks:load",function(){
 		$(".js-login-modal").openModal();
   	})
 
-    $(".dropdown-content").on("click", function(){
-      event.preventDefault();
-      $('.dropdown-button').dropdown('open');
-    })
+    // $(".dropdown-button btn").on("click", function(){
+    //   event.preventDefault();
+    //   $(".dropdown-button").dropdown('open');
+    // })
   	
  })
 
