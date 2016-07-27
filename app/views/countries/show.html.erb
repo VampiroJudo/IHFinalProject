@@ -2,12 +2,32 @@
 
 <ul>
 
-	<% @the_arts.each do |art| %>
+	<% @the_arts.each_with_index do |art, index| %>
 	<li>
-		<%= link_to art.name, controller: "countries", action: "booking",id: params[:id] %>
+		<br>
+		<strong><%= art.name %></li></strong>
 		<br>
 		<%= art.description %>
 		<br>
+
+		
+
+		<br>
+		<%= @schools[index].school %>
+		<br>
+		<%= @schools[index].address %>
+		<br>
+		<%= @schools[index].phone %>
+		<br>
+		<%= @schools[index].website %>
+		<br>
+	
+
+
+
+
+
+
 
 	</li>
 	<% end %>	
