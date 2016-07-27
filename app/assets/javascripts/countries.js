@@ -12,6 +12,11 @@ $(document).on("turbolinks:load",function(){
   		// location.href ='/users/sign_in'
 		$(".js-login-modal").openModal();
   	})
+
+    $(".dropdown-content").on("click", function(){
+      event.preventDefault();
+      $('.dropdown-button').dropdown('open');
+    })
   	
  })
 
