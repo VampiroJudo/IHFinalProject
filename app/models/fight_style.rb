@@ -1,4 +1,5 @@
 class FightStyle < ApplicationRecord
-	has_many :periods
+	has_many :packages
 	belongs_to :country
+
 end

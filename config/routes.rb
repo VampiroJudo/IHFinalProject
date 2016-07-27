@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'packages/school_name:string'
+  # get 'packages/school_name:string'
 
-  get 'packages/address:textarea'
+  # get 'packages/address:textarea'
 
-  get 'packages/phone_number:integer'
+  # get 'packages/phone_number:integer'
 
-  get 'packages/website:string'
+  # get 'packages/website:string'
 
   devise_for :users
 	get '/', to: 'countries#home'
