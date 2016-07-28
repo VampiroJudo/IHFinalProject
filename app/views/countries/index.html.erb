@@ -7,14 +7,18 @@
 	<% @prices.each do |cost| %>
 	<li>
 		<%= cost.two_weeks %>
+		<br>
 		<%= cost.one_month %>
+		<br>
 		<%= cost.three_months %>
+		<br>
 	</li>
 		<% end %>
 </ul>
 
 
 
+<%= link_to prices.two_weeks, controller: "countries", action: "booking",id: params[:id] %>
 
 
 
