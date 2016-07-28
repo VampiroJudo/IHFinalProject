@@ -1,3 +1,4 @@
 class Price < ApplicationRecord
-	belongs_to :packages
+	belongs_to :package
+
 end
