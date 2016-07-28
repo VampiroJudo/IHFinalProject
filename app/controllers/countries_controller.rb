@@ -29,9 +29,6 @@ class CountriesController < ApplicationController
 
 
 	def booking
-		
 		render "booking"
-
 	end
-
 end

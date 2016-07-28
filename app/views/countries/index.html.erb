@@ -6,11 +6,11 @@
 <ul>
 	<% @prices.each do |cost| %>
 	<li>
-		<%= cost.two_weeks %>
+			<button><%= link_to cost.two_weeks, controller: "countries", action: "booking",id: params[:id] %></button>
 		<br>
-		<%= cost.one_month %>
+			<button><%= link_to cost.one_month, controller: "countries", action: "booking",id: params[:id] %></button>
 		<br>
-		<%= cost.three_months %>
+			<button><%= link_to cost.three_months, controller: "countries", action: "booking",id: params[:id] %></button>
 		<br>
 	</li>
 		<% end %>
@@ -18,7 +18,7 @@
 
 
 
-<%= link_to prices.two_weeks, controller: "countries", action: "booking",id: params[:id] %>
+
 
 
 
