@@ -1,36 +1,24 @@
-
-
 <ul>
-
-	<% @the_arts.each_with_index do |art, index| %>
+		<% @the_arts.each_with_index do |art, index| %>
 	<li>
 		<br>
-		<strong><%= art.name %></li></strong>
+			<strong><%= art.name %></li></strong>
 		<br>
-		<%= art.description %>
+			<%= art.description %>
+		<br>
+		<br>
+			<%= @schools[index].school %>
+		<br>
+			<%= @schools[index].address %>
+		<br>
+			<%= @schools[index].phone %>
+		<br>
+			<a href="<%= @schools[index].website %>">Website</a>      
 		<br>
 
-		
-
-		<br>
-		<%= @schools[index].school %>
-		<br>
-		<%= @schools[index].address %>
-		<br>
-		<%= @schools[index].phone %>
-		<br>
-		<%= @schools[index].website %>
-		<br>
-	
-
-
-
-
-
-
-
+			<%= link_to art.name, controller: "countries", action: "index",id: params[:id] %>
 	</li>
-	<% end %>	
+		<% end %>	
 </ul>		
 
 

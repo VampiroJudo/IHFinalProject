@@ -20,6 +20,8 @@ class CountriesController < ApplicationController
 
 	
 	def index
+		id = params[:id]
+		@price = Package.where(fight_style_id: id)
 	
 		render "index"
 	end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  two_weeks: MyString
+  one_month: MyString
+  three_months: MyString
+  package_id: MyString
+
+two:
+  two_weeks: MyString
+  one_month: MyString
+  three_months: MyString
+  package_id: MyString

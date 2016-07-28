@@ -57,7 +57,6 @@ styleH = FightStyle.create!(name:"Sambo", description: "Sambo is a form of sport
 
 
 
-
 schoolA = Package.create!(school: "The Kodokan", address: "1-16-30 Kasuga, Bunkyo 112-0003, Tokyo Prefecture", phone: "81338117156", website: "http://kodokanjudoinstitute.org/", fight_style_id: styleA.id)
 schoolB = Package.create!(school: "JKA Headquarters Dojo", address: "2 Chome-23-15 Koraku, Bunkyo, Tokyo 112-0004, Japan", phone: "81358003091", website: "http://jka.or.jp/en/", fight_style_id: styleB.id)
 schoolC = Package.create!(school: "Hombu Dojo", address: "17-18 Wakamatsucho, 新宿区 Tokyo 162-0056, Japan", phone: "81332039236", website: "http://www.aikikai.or.jp/eng/",fight_style_id: styleC.id)
@@ -66,5 +65,17 @@ schoolE = Package.create!(school: "Grupo Internacional de Capoeira Topázio", ad
 schoolF = Package.create!(school: "Shaolin Temple", address: "Dengfeng Ave, Dengfeng, Zhengzhou, Henan, China", phone: "8637162745166", website:"http://www.shaolin.org.cn/",fight_style_id: styleF.id )
 schoolG = Package.create!(school: "Chen Bing Taiji Academy", address: "Chenjiagou, Henan, China", phone: "8618610069300", website:"http://www.scic-beijing.com/MartialArts/default.asp", fight_style_id: styleG.id)
 schoolH = Package.create!(school: "Sambo-Seventy", address: "ul. Akademika Vinogradova, 4Б, Moscow, Russia, 117133", phone: "74953396944", website: "http://xn---70-5cdf9dpu.xn--p1ai/",fight_style_id: styleH.id)
+
+
+
+
+priceA = Price.create!(two_weeks: "1000 USD", one_month: "2000 USD", three_months: "4000 USD", package_id: schoolA.id)
+priceB = Price.create!(two_weeks: "1000 USD", one_month: "2000 USD", three_months: "4000 USD", package_id: schoolB.id)
+priceC = Price.create!(two_weeks: "1000 USD", one_month: "2000 USD", three_months: "4000 USD", package_id: schoolC.id)
+priceD = Price.create!(two_weeks: "700 USD", one_month: "1500 USD", three_months: "2500 USD", package_id: schoolD.id)
+priceE = Price.create!(two_weeks: "700 USD", one_month: "1500 USD", three_months: "2500 USD", package_id: schoolE.id)
+priceF = Price.create!(two_weeks: "900 USD", one_month: "1300 USD", three_months: "2500 USD", package_id: schoolF.id)
+priceG = Price.create!(two_weeks: "900 USD", one_month: "1300 USD", three_months: "2500 USD", package_id: schoolG.id)
+priceH = Price.create!(two_weeks: "800 USD", one_month: "1500 USD", three_months: "2300 USD", package_id: schoolH.id)
 
 puts "DONE"
