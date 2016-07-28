@@ -1,4 +1,17 @@
+<h3>Package prices</h3>
 
+
+
+
+<ul>
+	<% @prices.each do |cost| %>
+	<li>
+		<%= cost.two_weeks %>
+		<%= cost.one_month %>
+		<%= cost.three_months %>
+	</li>
+		<% end %>
+</ul>
 
 
 

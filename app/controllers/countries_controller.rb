@@ -20,8 +20,9 @@ class CountriesController < ApplicationController
 
 	
 	def index
-		id = params[:id]
-		@price = Package.where(fight_style_id: id)
+		id = params[:id]	
+		@the_school = Package.find_by(fight_style_id: id)
+		@prices = Price.where(package_id: @the_school.id)
 	
 		render "index"
 	end
