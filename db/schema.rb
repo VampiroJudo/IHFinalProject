@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160728232058) do
+ActiveRecord::Schema.define(version: 20160728235006) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -43,6 +43,14 @@ ActiveRecord::Schema.define(version: 20160728232058) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "bookings", force: :cascade do |t|
+    t.boolean  "is_paid"
+    t.integer  "period_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "countries", force: :cascade do |t|
     t.text     "name"
     t.text     "description"
@@ -66,6 +74,15 @@ ActiveRecord::Schema.define(version: 20160728232058) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "fight_style_id"
+  end
+
+  create_table "periods", force: :cascade do |t|
+    t.date     "start_date"
+    t.date     "end_date"
+    t.integer  "limit"
+    t.integer  "package_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "prices", force: :cascade do |t|
