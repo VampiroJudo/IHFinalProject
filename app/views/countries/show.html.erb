@@ -7,16 +7,16 @@
 			<%= art.description %>
 		<br>
 		<br>
-			<%= @schools[index].school %>
+			<%= @packages[index].school %>
 		<br>
-			<%= @schools[index].address %>
+			<%= @packages[index].address %>
 		<br>
-			<%= @schools[index].phone %>
+			<%= @packages[index].phone %>
 		<br>
-			<a href="<%= @schools[index].website %>">Website</a>      
+			<a href="<%= @packages[index].website %>">Website</a>      
 		<br>
 
-			<%= link_to art.name, controller: "countries", action: "index",id: params[:id] %>
+			<%= link_to art.name, calendar_view_path(@packages[index].id) %>
 	</li>
 		<% end %>	
 </ul>		

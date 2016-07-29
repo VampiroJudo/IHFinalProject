@@ -78,4 +78,4 @@ priceF = Price.create!(two_weeks: "900 USD", one_month: "1300 USD", three_months
 priceG = Price.create!(two_weeks: "900 USD", one_month: "1300 USD", three_months: "2500 USD", package_id: schoolG.id)
 priceH = Price.create!(two_weeks: "800 USD", one_month: "1500 USD", three_months: "2300 USD", package_id: schoolH.id)
 
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+AdminUser.create!(email: 'johnconley507@hotmail.com', password: 'rednef1', password_confirmation: 'rednef1')

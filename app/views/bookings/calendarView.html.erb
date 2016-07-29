@@ -1,0 +1,27 @@
+
+<div class="container">
+	<div class="calendar-view"></div>
+</div>
+
+<script>
+	$(".calendar-view").fullCalendar({
+		 events: {
+        	url: '/data/packages_as_events/' + <%= @package.id %>,
+        	type: 'GET',
+        	error: function() {
+            	sweetAlert('there was an error while fetching events!');
+        	},
+       		 color: 'yellow',   // a non-ajax option
+       		 textColor: 'black' // a non-ajax option
+    	},
+    	 eventClick: function(calEvent, jsEvent, view) {
+    	 	console.log(calEvent)
+    	 		if (calEvent.period_id){
+    	 			var period_id = calEvent.period_id
+    	 			location.replace('/bookings/' + period_id)
+    	 		}
+
+	    }
+
+	});
+</script>	

@@ -13,3 +13,17 @@
 
  @import "materialize";
  @import "**/*";
+
+.fc-content{
+	-webkit-transition: color 1s, background-color 1s, box-shadow 1s;
+	transition: color 1s, background-color 1s, box-shadow 1s;	
+
+
+}
+.fc-content:hover {
+	box-shadow: lightgray 2px 5px 5px;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	
+}
