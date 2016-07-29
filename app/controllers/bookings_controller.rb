@@ -33,11 +33,12 @@ class BookingsController < ApplicationController
 	def create_booking
 		booking = Booking.new()
 		booking.user_id = current_user.id
-		booking.period_id = paramd[:period_id]
-			if booking.save?
-				
+		booking.period_id = params[:period_id]
+			if booking.save
+				redirect_to ('/')
+				p "WORKED"
 			else
-
+				P "DIDNT WORK"
 			end
 	end
 end

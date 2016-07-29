@@ -1,8 +1,7 @@
-
+<body background="https://epicplugins.com/wp-content/uploads/2015/05/dark-head-Tibet-warriors-monk-martial-arts-meditation-black-background-shaolin-_15982-58.jpg"></body>
 
 <nav>
 	<div class="nav-wrapper">
-		<a href="#" class="brand-logo">Put logo here</a>
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><button class="sign_up_btn">Sign Up</button></li>
 			<li><button class="log_in">Log In</button></li>
@@ -16,7 +15,9 @@
 	<% @the_places.each do |place|%>
 		<li>
 			<a href="/countries/<%= place.id %>">
-				<button id="country_btn"> <%=place.name%> </button>	
+      <br>
+      <br>
+				<strong><button id="country_btn"> <%=place.name%> </button>	</strong>
 			</a>
 		</li>
 	<% end %>
