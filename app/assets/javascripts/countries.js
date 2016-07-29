@@ -13,6 +13,8 @@ $(document).on("turbolinks:load",function(){
 		$(".js-login-modal").openModal();
   	})
 
+  
+
   		
     
  })
