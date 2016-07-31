@@ -1,15 +1,27 @@
-<body background="https://epicplugins.com/wp-content/uploads/2015/05/dark-head-Tibet-warriors-monk-martial-arts-meditation-black-background-shaolin-_15982-58.jpg"></body>
+<!-- <body background="http://www.ljplus.ru/img4/k/i/kirgetova/FlyingSwordCancanChuGetty.jpg" id="budda"></body>
+ -->
 
-		  <nav>
+<nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo"></a>
+     <a href="#" class="brand_logo">Ronin Travel</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <a class="sign_up_btn">Sign Up</a>
-          <a class="log_in">Log In</a>
+        <li><a href="sass.html" class="sign_up_btn">Sign Up</a></li>
+        <li><a href="badges.html" class="log_in">Log In</a></li>
       </ul>
     </div>
   </nav>
         
+<ul id="slide-out" class="side-nav">
+        <ul>
+          <% @the_places.each do |place|%>
+            <li>
+              <a href="/countries/<%= place.id %>">
+                <%=place.name%> 
+              </a>
+          </li>
+        <% end %>
+    </ul>
+</ul>
 
 
 
@@ -73,32 +85,15 @@
         <%= f.label :remember_me %>
     </div>
       <% end -%>
-
-    
-      
-    </div>
-    <div class="modal-footer">
+</div>
+  <div class="modal-footer">
     <div class="actions">
       <%= f.submit "Log in" %>
+        </div>
     </div>
-      </div>
-    <% end %>
-    </div>
+  <% end %>
+</div>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">Select Country</i></a>
 
- <ul id="slide-out" class="side-nav">
-    <li><div class="userView"></div></li>
-      <ul>
-        <% @the_places.each do |place|%>
-          <li>
-            <a href="/countries/<%= place.id %>">
-            <%=place.name%> 
-              </a>
-          </li>
-        <% end %>
-    </ul>
-</ul>
-  <button data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></button>
-        
 
-    
-  
+ 

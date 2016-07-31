@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-
+gem 'paperclip'
 # gem 'google-webfonts-rails'
 gem 'materialize-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
