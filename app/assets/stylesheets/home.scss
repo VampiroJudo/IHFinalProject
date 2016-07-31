@@ -1,5 +1,5 @@
 .nav-wrapper {
-	background-color: black;
+	background-color: #2B2B2B;
 	border: none;
 	color: white;
 	font-style: italic;	
@@ -22,13 +22,7 @@
 	font-family: open sanz;
 }
 
-#country_btn {
-		background-color: #2B2B2B;
-		color: red;
-		width: 100px;
-		height: 40px;
-		font-family: graphik;
-}
+
 
 
 .material-icons {
@@ -45,8 +39,19 @@
 	color: red;
 	font-size: 30px;
 	padding-left:550px;	
+}
 
 
+.side-nav {
+	background: white;
+}
+
+#country_btn {
+		background-color: #2B2B2B;
+		color: red;
+		width: 100px;
+		height: 40px;
+		font-family: graphik;
 }
 
 	
