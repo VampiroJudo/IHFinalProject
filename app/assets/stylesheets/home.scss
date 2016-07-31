@@ -1,31 +1,21 @@
 .nav-wrapper {
-	background-color: black;
+	background-color: #616161;
 }
 
 .sign_up_btn {
-	background-color: black;
+	background-color: #616161;
 	border: none;
-	color: red;
+	color: white;
 	font-style: italic;	
-	font-size: 25px;
-	font-family: palatino;
+	font-family: kaushan;
 }
 
 .log_in {
-	background-color: black;
+	background-color: #616161;
 	border: none;
-	color: red;
+	color: white;
 	font-style: italic;
-	font-size: 25px;
-	font-family: palatino;
-}
-
-.brand-logo{
-	
-	color: red;
-	font-style: italic;
-	font-size: 50px;
-	font-family: palatino;
+	font-family: kaushan;
 }
 
 #country_btn {
@@ -33,10 +23,13 @@
 		color: red;
 		width: 100px;
 		height: 40px;
-		font-family: palatino;
-
+		font-family: kaushan;
 }
 
+
+.material-icons {
+	color: red;
+}
 
 
 	

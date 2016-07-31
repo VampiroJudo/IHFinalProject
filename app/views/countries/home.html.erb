@@ -1,32 +1,22 @@
 <body background="https://epicplugins.com/wp-content/uploads/2015/05/dark-head-Tibet-warriors-monk-martial-arts-meditation-black-background-shaolin-_15982-58.jpg"></body>
 
-<nav>
-	<div class="nav-wrapper">
-   <a href="#" class="brand-logo">Bushido Travel</a>
-		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li><button class="sign_up_btn">Sign Up</button></li>
-			<li><button class="log_in">Log In</button></li>
-    </ul>
-	</div>
-</nav>
+		  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <a class="sign_up_btn">Sign Up</a>
+          <a class="log_in">Log In</a>
+      </ul>
+    </div>
+  </nav>
+        
 
 
-<ul>
-	<% @the_places.each do |place|%>
-		<li>
-			<a href="/countries/<%= place.id %>">
-      <br>
-      <br>
-				<strong><button id="country_btn"> <%=place.name%> </button>	</strong>
-			</a>
-		</li>
-	<% end %>
-</ul>		
 
 
 <div class="modal js-sign-up-modal">
-	
-	<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <div class="modal-content">
       <%= devise_error_messages! %>
 
@@ -56,15 +46,15 @@
 
 
   <div class="modal-footer">
-  	<div class="actions">
-  		<%= f.submit "Sign up" %>
-  	</div>
-	</div>
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
+  </div>
    <% end %>
 </div>
 
 <div class="modal js-login-modal">
-	
+  
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="modal-content">
     <div class="field">
@@ -88,11 +78,27 @@
       
     </div>
     <div class="modal-footer">
-  	<div class="actions">
-    	<%= f.submit "Log in" %>
-  	</div>
-    	</div>
+    <div class="actions">
+      <%= f.submit "Log in" %>
+    </div>
+      </div>
     <% end %>
     </div>
+
+ <ul id="slide-out" class="side-nav">
+    <li><div class="userView"></div></li>
+      <ul>
+        <% @the_places.each do |place|%>
+          <li>
+            <a href="/countries/<%= place.id %>">
+            <%=place.name%> 
+              </a>
+          </li>
+        <% end %>
+    </ul>
+</ul>
+  <button data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></button>
+        
+
     
   
