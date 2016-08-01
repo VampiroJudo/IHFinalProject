@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-
-gem 'paperclip'
 # gem 'google-webfonts-rails'
 gem 'materialize-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,7 +35,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'carrierwave'
 gem 'carrierwave-aws'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

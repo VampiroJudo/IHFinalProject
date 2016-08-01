@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # get 'packages/website:string'
 
   devise_for :users
-	get '/', to: 'countries#home'
+	get '/', to: 'countries#home', as: "root"
 	get '/countries/:id', to: 'countries#show' 
 	get 'countries/:id/show', to: 'countries#index'
 	get '/countries/:id/show/:id', to: 'countries#booking'
