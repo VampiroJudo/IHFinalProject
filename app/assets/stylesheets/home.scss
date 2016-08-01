@@ -1,9 +1,9 @@
 .nav-wrapper {
-	background-color: #2B2B2B;
+	background-color: rgba(0,0,0,0.9) !important;	
 	border: none;
 	color: white;
-	font-style: italic;	
-	font-family: open sanz;
+	font-family: 'Droid Serif', Georgia, Times, serif;
+
 
 }
 
@@ -38,19 +38,19 @@
 
 
 .brand_logo{
-	color: red;
+	color: white;
 	font-size: 30px;
 	padding-left:500px;	
 }
 
 
 .side-nav {
-	background-color: #424343 ;
+	background-color: #5d7c7e;
 	}
 
 
 .footer {
-	margin-top: 100px ;
+	  color: none;		
 }
 
 #name_color {
@@ -77,12 +77,8 @@
 	padding-left: 300px;
 	margin-top: 100px;
 	font-style: open sanz;
-	color:black;
-}
+	color:black;}
 
-#mm1 {
-
-}
 
 #mm2{
 	padding-left: 25px;
@@ -95,3 +91,4 @@
 #mm4 {
 	padding-left: 170px;
 }
+
