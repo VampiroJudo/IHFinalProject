@@ -12,6 +12,7 @@ countryB = Country.create!(name: "Brazil", description: "Arts")
 countryC = Country.create!(name: "China", description: "Arts")
 countryD = Country.create!(name: "Russia", description: "Arts")
 countryE = Country.create!(name: "South Korea", description: "Arts")
+countryF = Country.create!(name: "Thailand", description: "Arts")
 
 
 
@@ -64,6 +65,10 @@ styleJ = FightStyle.create!(name:"Taekwondo", description: "Taekwondo is a Korea
 	Its techniques are characterized by a set of blocks, kicks, punches, and open-handed strikes and includes several take-downs or sweeps, throws, and joint locks. Taekwondo is known for its emphasis on high 
 	kicking and fast hand techniques.", country_id: countryE.id, avatar: Rails.root.join("db/images/TaeKwonDo.jpg").open)
 
+styleK = FightStyle.create!(name: "Muay Thai", description: "Muay Thai or Thai boxing is the cultural martial art of Thailand. The origin of Muay Thai dates back several hundred years, and was, essentially,
+ developed as a form of close-combat that used the entire body as a weapon. Each appendage used mimics a weapon of war. The hands become the sword and dagger; the shins and forearms were hardened in training
+  to act as armor against blows, and the elbow to fell opponents like a heavy mace or hammer; the legs and knees became the axe and staff. The body operated as one unit. The knees and elbows constantly searching 
+  and testing for an opening while grappling and trying to spin an enemy to the ground for the kill.", country_id: countryF.id, avatar: Rails.root.join("db/images/muay_thai.jpg").open)
 
 schoolA = Package.create!(school: "The Kodokan", address: "1-16-30 Kasuga, Bunkyo 112-0003, Tokyo Prefecture", phone: "81338117156", website: "http://kodokanjudoinstitute.org/", fight_style_id: styleA.id)
 schoolB = Package.create!(school: "JKA Headquarters Dojo", address: "2 Chome-23-15 Koraku, Bunkyo, Tokyo 112-0004, Japan", phone: "81358003091", website: "http://jka.or.jp/en/", fight_style_id: styleB.id)
@@ -75,6 +80,10 @@ schoolG = Package.create!(school: "Chen Bing Taiji Academy", address: "Chenjiago
 schoolH = Package.create!(school: "Sambo-Seventy", address: "ul. Akademika Vinogradova, 4Б, Moscow, Russia, 117133", phone: "74953396944", website: "http://xn---70-5cdf9dpu.xn--p1ai/",fight_style_id: styleH.id)
 schoolI = Package.create!(school: "Sangmukwan", address: "159 Guwol-ro Namdong-gu, Incheon South-Korea 405-807", phone: "8289524710", website: "http://www.sangmookwan.com/", fight_style_id: styleI.id)
 schoolJ = Package.create!(school: "World Taekwondo Academy", address:"32, Teheran7gil, Gangnam-gu, Seoul, Korea 06130", phone: "8225671058", website: "http://www.kukkiwon.or.kr/front/eng/main.action", fight_style_id: styleJ.id)
+schoolK = Package.create!(school: "Rawai Muay Thai", address: "35/22 M.4 Soi Pa Nat Khuk Khak, Takua PaPhang Nga, Thailand 82190", phone: "66076486841", website: "http://www.rawaimuaythai.com/", fight_style_id: styleK.id)
+
+
+
 
 
 priceA = Price.create!(two_weeks: "1000 USD", one_month: "2000 USD", three_months: "4000 USD", package_id: schoolA.id)
