@@ -1,11 +1,13 @@
-<body background="http://orig13.deviantart.net/904a/f/2014/101/b/9/dark_denim_background_by_jhazzxify-d7e0nfu.jpg">
+<body background="http://cdn.pcwallart.com/images/black-fabric-texture-wallpaper-wallpaper-3.jpg">
+
 
 <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">The Arts</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="badges.html">Home</a></li>
-        <li><a href="collapsible.html">Log Out</a></li>
+        <%= link_to(destroy_user_session_path, method: :delete) do %>
+        <button id="log_out_btn">Log Out</button>
+       <% end %>
       </ul>
     </div>
   </nav>
