@@ -70,16 +70,16 @@ styleK = FightStyle.create!(name: "Muay Thai", description: "Muay Thai or Thai b
   to act as armor against blows, and the elbow to fell opponents like a heavy mace or hammer; the legs and knees became the axe and staff. The knees and elbows constantly searching 
   and testing for an opening while grappling and trying to spin an enemy to the ground for the kill.", country_id: countryF.id, avatar: Rails.root.join("db/images/muay_thai.jpg").open)
 
-schoolA = Package.create!(school: "The Kodokan", address: "1-16-30 Kasuga, Bunkyo 112-0003, Tokyo Prefecture", phone: "81338117156", website: "http://kodokanjudoinstitute.org/", fight_style_id: styleA.id)
-schoolB = Package.create!(school: "JKA Headquarters Dojo", address: "2 Chome-23-15 Koraku, Bunkyo, Tokyo 112-0004, Japan", phone: "81358003091", website: "http://jka.or.jp/en/", fight_style_id: styleB.id)
-schoolC = Package.create!(school: "Hombu Dojo", address: "17-18 Wakamatsucho, 新宿区 Tokyo 162-0056, Japan", phone: "81332039236", website: "http://www.aikikai.or.jp/eng/",fight_style_id: styleC.id)
+schoolA = Package.create!(school: "The Kodokan", address: "1-16-30 Kasuga, Bunkyo 112-0003, Tokyo Prefecture, Japan", phone: "81338117156", website: "http://kodokanjudoinstitute.org/", fight_style_id: styleA.id)
+schoolB = Package.create!(school: "JKA Headquarters Dojo", address: "2 Chome-23-15 Koraku, Bunkyo 112-0004, Tokyo Prefecture , Japan", phone: "81358003091", website: "http://jka.or.jp/en/", fight_style_id: styleB.id)
+schoolC = Package.create!(school: "Hombu Dojo", address: "17-18 Wakamatsucho, 新宿区 162-0056, Tokyo Prefecture, Japan", phone: "81332039236", website: "http://www.aikikai.or.jp/eng/",fight_style_id: styleC.id)
 schoolD = Package.create!(school: "Gracie Humaitá", address: "Rua Humaitá, 52 - Humaitá, Rio de Janeiro - RJ, 22261-001, Brazil", phone: "552122666094", website: "http://graciehumaita.com/site/en/academias/humaita/", fight_style_id: styleD.id)
 schoolE = Package.create!(school: "Grupo Internacional de Capoeira Topázio", address:"Praça de Santana, 78 - Nazaré, Salvador - BA, 40040-460, Brazil", phone: "557133213366", website:"http://www.capoeiratopazio.com.br/",fight_style_id: styleE.id)
 schoolF = Package.create!(school: "Shaolin Temple", address: "Dengfeng Ave, Dengfeng, Zhengzhou, Henan, China", phone: "8637162745166", website:"http://www.shaolin.org.cn/",fight_style_id: styleF.id )
 schoolG = Package.create!(school: "Chen Bing Taiji Academy", address: "Chenjiagou, Henan, China", phone: "8618610069300", website:"http://www.scic-beijing.com/MartialArts/default.asp", fight_style_id: styleG.id)
 schoolH = Package.create!(school: "Sambo-Seventy", address: "ul. Akademika Vinogradova, 4Б, Moscow, Russia, 117133", phone: "74953396944", website: "http://xn---70-5cdf9dpu.xn--p1ai/",fight_style_id: styleH.id)
-schoolI = Package.create!(school: "Sangmukwan", address: "159 Guwol-ro Namdong-gu, Incheon South-Korea 405-807", phone: "8289524710", website: "http://www.sangmookwan.com/", fight_style_id: styleI.id)
-schoolJ = Package.create!(school: "World Taekwondo Academy", address:"32, Teheran7gil, Gangnam-gu, Seoul, Korea 06130", phone: "8225671058", website: "http://www.kukkiwon.or.kr/front/eng/main.action", fight_style_id: styleJ.id)
+schoolI = Package.create!(school: "Sangmukwan", address: "159 Guwol-ro Namdong-gu, Incheon South Korea 405-807", phone: "8289524710", website: "http://www.sangmookwan.com/", fight_style_id: styleI.id)
+schoolJ = Package.create!(school: "World Taekwondo Academy", address:"32, Teheran7gil, Gangnam-gu, Seoul, South Korea 06130", phone: "8225671058", website: "http://www.kukkiwon.or.kr/front/eng/main.action", fight_style_id: styleJ.id)
 schoolK = Package.create!(school: "Rawai Muay Thai", address: "35/22 M.4 Soi Pa Nat Khuk Khak, Takua PaPhang Nga, Thailand 82190", phone: "66076486841", website: "http://www.rawaimuaythai.com/", fight_style_id: styleK.id)
 
 
