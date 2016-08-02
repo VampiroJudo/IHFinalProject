@@ -11,6 +11,7 @@ countryA = Country.create!(name: "Japan", description: "Arts")
 countryB = Country.create!(name: "Brazil", description: "Arts")
 countryC = Country.create!(name: "China", description: "Arts")
 countryD = Country.create!(name: "Russia", description: "Arts")
+countryE = Country.create!(name: "South Korea", description: "Arts")
 
 
 
@@ -28,7 +29,7 @@ styleB = FightStyle.create!(name: "Shotokan Karate", description: "Shotokan Kara
 styleC = FightStyle.create!(name: "Aikido", description: "Aikido is a Japanese martial art developed by Morihei Ueshiba (often referred to 
 	by his title 'O Sensei' or 'Great Teacher'). On a purely physical level it is an art involving some throws and joint locks that are derived 
 	from jiu-jitsu and some throws and other techniques derived from kenjutsu. Aikido focuses not on punching or kicking opponents, but rather on 
-	using their own energy to gain control of them or to throw them away from you.", country_id: countryA.id)
+	using their own energy to gain control of them or to throw them away from you.", country_id: countryA.id, avatar: Rails.root.join("db/images/aikido.jpg").open)
 
 styleD = FightStyle.create!(name: "Brazilian Jiu-jitsu", description: "Brazilian Jiu-jitsu is a martial art, combat sport, and a self defense system 
 	that focuses on grappling and especially ground fighting. Brazilian Jiu-jitsu was formed from Kodokan judo ground fighting (newaza) fundamentals 
@@ -55,6 +56,13 @@ styleH = FightStyle.create!(name:"Sambo", description: "Sambo is a form of sport
     into an extremely formidable fighting art with principles applicable to martial artists of any style. Sambo’s arsenal includes, but is not limited to, strikes, joint locks, chokes, throws, 
     ground fighting, and weapons.", country_id: countryD.id, avatar: Rails.root.join("db/images/sambocombat1-0.jpg").open)
 
+styleI = FightStyle.create!(name: "Hapkido", description: "Hapkido was designed as a method of police and military defense and it is influenced by the most effective techniques of each martial art. 
+	Some of them are: Japanese Jujutsu locks, Judo takedowns, Kung Fu striking, Taekwondo kicks and Tang So Doo blocking and striking techniques. Many instructors also include techniques from Muay Thai
+	 or MMA. So all together, there are more than 3800 different techniques, making it a multi-resource martial art.", country_id: countryE.id, avatar: Rails.root.join("db/images/hapkido.jpg").open)
+
+styleJ = FightStyle.create!(name:"Taekwondo", description: "Taekwondo is a Korean fighting style created in the 40's, based from Taek Kyeon (a traditional Korean wrestling), Karate and other local arts. 
+	Its techniques are characterized by a set of blocks, kicks, punches, and open-handed strikes and includes several take-downs or sweeps, throws, and joint locks. Taekwondo is known for its emphasis on high 
+	kicking and fast hand techniques.", country_id: countryE.id, avatar: Rails.root.join("db/images/TaeKwonDo.jpg").open)
 
 
 schoolA = Package.create!(school: "The Kodokan", address: "1-16-30 Kasuga, Bunkyo 112-0003, Tokyo Prefecture", phone: "81338117156", website: "http://kodokanjudoinstitute.org/", fight_style_id: styleA.id)
@@ -65,8 +73,8 @@ schoolE = Package.create!(school: "Grupo Internacional de Capoeira Topázio", ad
 schoolF = Package.create!(school: "Shaolin Temple", address: "Dengfeng Ave, Dengfeng, Zhengzhou, Henan, China", phone: "8637162745166", website:"http://www.shaolin.org.cn/",fight_style_id: styleF.id )
 schoolG = Package.create!(school: "Chen Bing Taiji Academy", address: "Chenjiagou, Henan, China", phone: "8618610069300", website:"http://www.scic-beijing.com/MartialArts/default.asp", fight_style_id: styleG.id)
 schoolH = Package.create!(school: "Sambo-Seventy", address: "ul. Akademika Vinogradova, 4Б, Moscow, Russia, 117133", phone: "74953396944", website: "http://xn---70-5cdf9dpu.xn--p1ai/",fight_style_id: styleH.id)
-
-
+schoolI = Package.create!(school: "Sangmukwan", address: "159 Guwol-ro Namdong-gu, Incheon South-Korea 405-807", phone: "8289524710", website: "http://www.sangmookwan.com/", fight_style_id: styleI.id)
+schoolJ = Package.create!(school: "World Taekwondo Academy", address:"32, Teheran7gil, Gangnam-gu, Seoul, Korea 06130", phone: "8225671058", website: "http://www.kukkiwon.or.kr/front/eng/main.action", fight_style_id: styleJ.id)
 
 
 priceA = Price.create!(two_weeks: "1000 USD", one_month: "2000 USD", three_months: "4000 USD", package_id: schoolA.id)
