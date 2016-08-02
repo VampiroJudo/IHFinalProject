@@ -65,9 +65,9 @@ styleJ = FightStyle.create!(name:"Taekwondo", description: "Taekwondo is a Korea
 	Its techniques are characterized by a set of blocks, kicks, punches, and open-handed strikes and includes several take-downs or sweeps, throws, and joint locks. Taekwondo is known for its emphasis on high 
 	kicking and fast hand techniques.", country_id: countryE.id, avatar: Rails.root.join("db/images/TaeKwonDo.jpg").open)
 
-styleK = FightStyle.create!(name: "Muay Thai", description: "Muay Thai or Thai boxing is the cultural martial art of Thailand. The origin of Muay Thai dates back several hundred years, and was, essentially,
- developed as a form of close-combat that used the entire body as a weapon. Each appendage used mimics a weapon of war. The hands become the sword and dagger; the shins and forearms were hardened in training
-  to act as armor against blows, and the elbow to fell opponents like a heavy mace or hammer; the legs and knees became the axe and staff. The body operated as one unit. The knees and elbows constantly searching 
+styleK = FightStyle.create!(name: "Muay Thai", description: "Muay Thai or Thai boxing is the cultural martial art of Thailand. The origin of Muay Thai dates back several hundred years, and was 
+  developed as a form of close-combat that used the entire body as a weapon. Each appendage used mimics a weapon of war. The hands become the sword and dagger; the shins and forearms are hardened in training
+  to act as armor against blows, and the elbow to fell opponents like a heavy mace or hammer; the legs and knees became the axe and staff. The knees and elbows constantly searching 
   and testing for an opening while grappling and trying to spin an enemy to the ground for the kill.", country_id: countryF.id, avatar: Rails.root.join("db/images/muay_thai.jpg").open)
 
 schoolA = Package.create!(school: "The Kodokan", address: "1-16-30 Kasuga, Bunkyo 112-0003, Tokyo Prefecture", phone: "81338117156", website: "http://kodokanjudoinstitute.org/", fight_style_id: styleA.id)
