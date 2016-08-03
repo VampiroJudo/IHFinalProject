@@ -8,15 +8,19 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>  <a  id="fb_btn"target="_blank" title="follow me on facebook" href="https://www.facebook.com/Ronin-Travel-644982882327061/"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a></li>
         <li><a id="tw_btn" target="_blank" title="follow me on Twitter" href="https://twitter.com/Ronin_Travel"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a></li>
-        <li><a href="sass.html" class="sign_up_btn">Sign Up</a></li>
+      <% if current_user %>
+        <%= link_to("Sign Out", destroy_user_session_path, method: :delete) %>
+      <% else %>
+      <li><a href="sass.html" class="sign_up_btn">Sign Up</a></li>
         <li><a href="badges.html" class="log_in">Log In</a></li>
+      <% end -%>
       </ul>
     </div>
   </div>
 </nav>
-        
+       
 <ul id="slide-out" class="side-nav">
-    <img class="background" src="http://f.tqn.com/y/martialarts/1/W/3/4/-/-/karate_martial_arts_137867517.jpg">
+    <img class="background" width="100%" src="http://f.tqn.com/y/martialarts/1/W/3/4/-/-/karate_martial_arts_137867517.jpg">
         <ul>
           <% @the_places.each do |place|%>
             <li>
@@ -61,7 +65,7 @@
 
   <div class="modal-footer">
     <div class="actions">
-      <button id="sign_up_sbmt"><%= f.submit "Sign up" %></button>
+      <button id="sign_up_sbmt" class="btn waves-effect waves-light"><%= f.submit "Sign up" %></button>
     </div>
   </div>
    <% end %>
@@ -90,12 +94,12 @@
 </div>
   <div class="modal-footer">
     <div class="actions">
-      <button id="log_in_sbmt"><%= f.submit "Log in" %></button>
+      <button id="log_in_sbmt" class="btn waves-effect waves-light"><%= f.submit "Log in" %></button>
         </div>
     </div>
   <% end %>
 </div>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">Countries of Instruction</i></a>
+  <a href="#" data-activates="slide-out" class="button-collapse home_page_slide"><i class="material-icons">Countries of Instruction</i></a>
 
 <div class="col s12 m6 l3" id="mm_quote">
   <h5 id="mm1">"You must understand</h5> 
@@ -104,3 +108,18 @@
   <p id="mm4">Miyamoto Musashi</p>
 </div>
 
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+           
+                
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 VampiroTech
+           </div>
+          </div>
+</footer>

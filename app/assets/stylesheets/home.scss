@@ -2,32 +2,21 @@
 	background-color: rgba(0,0,0,0.9) !important;	
 	border: none;
 	color: white;
-	font-family: 'Droid Serif', Georgia, Times, serif;
+	font-family: 'Roboto', Georgia, Times, serif;
 
 
 }
 
-.sign_up_btn {
+.sign_up_btn:hover {
 	background-color:#2B2B2B;
-	border: none;
-	color: white;
-	font-style: italic;	
-	font-family: open sanz;
-	font-size: 17px;
-}
-
-.log_in {
+}	
+.log_in:hover {
 	background-color:#2B2B2B;
-	border: none;
-	color: white;
-	font-style: italic;
-	font-family: open sanz;
-	font-size: 17px;
 }
 .material-icons {
 	color: white;
 	font-style: italic;	
-	font-family: open sanz;
+	font-family:Roboto;
 	font-size: 25px;
 }
 
@@ -48,6 +37,14 @@
 .field {
 	color: black;
 }
+
+.home_page_slide {
+	display: inline-block;
+    position: relative;
+    top: -50px;
+    width: 50%;
+}
+
 
 #name_color {
 	color:white;
@@ -72,7 +69,7 @@
 #mm_quote {
 	padding-left: 300px;
 	margin-top: 100px;
-	font-style: open sanz;
+	font-style:Roboto;
 	color:black;}
 
 

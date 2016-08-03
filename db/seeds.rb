@@ -57,7 +57,7 @@ styleH = FightStyle.create!(name:"Sambo", description: "Sambo is a form of sport
     into an extremely formidable fighting art with principles applicable to martial artists of any style. Sambo’s arsenal includes, but is not limited to, strikes, joint locks, chokes, throws, 
     ground fighting, and weapons.", country_id: countryD.id, avatar: Rails.root.join("db/images/sambocombat1-0.jpg").open)
 
-styleI = FightStyle.create!(name: "Hapkido", description: "Hapkido was designed as a method of police and military defense and it is influenced by the most effective techniques of each martial art. 
+styleI = FightStyle.create!(name: "Hapkido", description: "Hapkido was designed as a method of police and military defense and it incorporates the most effective techniques of many martial arts. 
 	Some of them are: Japanese Jujutsu locks, Judo takedowns, Kung Fu striking, Taekwondo kicks and Tang So Doo blocking and striking techniques. Many instructors also include techniques from Muay Thai
 	 or MMA. So all together, there are more than 3800 different techniques, making it a multi-resource martial art.", country_id: countryE.id, avatar: Rails.root.join("db/images/hapkido.jpg").open)
 

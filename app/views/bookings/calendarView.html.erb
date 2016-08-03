@@ -1,6 +1,6 @@
 
 <div class="container">
-	<div class="calendar-view"></div>
+	<div class="col s12 calendar-view"></div>
 </div>
 
 <script>
@@ -11,8 +11,8 @@
         	error: function() {
             	sweetAlert('there was an error while fetching events!');
         	},
-       		 color: 'red',   // a non-ajax option
-       		 textColor: 'black' // a non-ajax option
+       		 color: '#ef5350',   // a non-ajax option
+       		 textColor: 'white' // a non-ajax option
     	},
     	 eventClick: function(calEvent, jsEvent, view) {
     	 	console.log(calEvent)

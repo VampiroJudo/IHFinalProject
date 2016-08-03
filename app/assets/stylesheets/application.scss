@@ -13,17 +13,44 @@
 
  @import "materialize";
  @import "**/*";
-
+ $primary-color: color("blue", "lighten-2") !default;
+#nav-mobile {
+	z-index: 5000;
+}
 .fc-content{
-	-webkit-transition: color 1s, background-color 1s, box-shadow 1s;
+	-webkit-transition: color 0.5s, background-color 1s, box-shadow 1s;
 	transition: color 1s, background-color 1s, box-shadow 1s;	
 
 
 }
 .fc-content:hover {
 	box-shadow: lightgray 2px 5px 5px;
-	background-color: grey;
+	background-color: #e53935;
 	color: white;
 	cursor: pointer;
 	
 }
+
+.white_text{
+	color: white;
+}
+body {
+	font-family: 'Roboto';
+}
+.nav-wrapper {
+	background-color:black !important;
+}
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+
+ footer {
+ 	background-color: transparent !important;
+ 	margin-top: 200px !important; 
+ }
