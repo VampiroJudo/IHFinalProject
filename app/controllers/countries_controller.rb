@@ -9,7 +9,7 @@ class CountriesController < ApplicationController
 
 	def show
 		id = params[:id]
-		country = Country.find_by(id)
+		country = Country.find(id)
 		@the_arts = FightStyle.where(country_id: id)
 		@packages = []
 		@the_arts.each do |the_art|
