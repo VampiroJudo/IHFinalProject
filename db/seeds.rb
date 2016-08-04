@@ -55,7 +55,7 @@ styleH = FightStyle.create!(name:"Sambo", description: "Sambo is a form of sport
     Under the leadership of Sambo’s forefathers V.S. Oshchepkov, V.A. Spiridinov, and A. A. Kharlampiev, indigenous fighting styles from regions including Japan, China, Mongolia, India,
     Africa, Europe, North America, Caucasus, and Russia were studied and blended into what is now known as Sambo. After generations of civilian and military refinement, Sambo has evolved 
     into an extremely formidable fighting art with principles applicable to martial artists of any style. Sambo’s arsenal includes, but is not limited to, strikes, joint locks, chokes, throws, 
-    ground fighting, and weapons.", country_id: countryD.id, avatar: Rails.root.join("db/images/sambocombat1-0.jpg").open)
+    ground fighting, and weapons.", country_id: countryD.id, avatar: Rails.root.join("db/images/sambo-combat1-0.jpg").open)
 
 styleI = FightStyle.create!(name: "Hapkido", description: "Hapkido was designed as a method of police and military defense and it incorporates the most effective techniques of many martial arts. 
 	Some of them are: Japanese Jujutsu locks, Judo takedowns, Kung Fu striking, Taekwondo kicks and Tang So Doo blocking and striking techniques. Many instructors also include techniques from Muay Thai
@@ -63,7 +63,7 @@ styleI = FightStyle.create!(name: "Hapkido", description: "Hapkido was designed 
 
 styleJ = FightStyle.create!(name:"Taekwondo", description: "Taekwondo is a Korean fighting style created in the 40's, based from Taek Kyeon (a traditional Korean wrestling), Karate and other local arts. 
 	Its techniques are characterized by a set of blocks, kicks, punches, and open-handed strikes and includes several take-downs or sweeps, throws, and joint locks. Taekwondo is known for its emphasis on high 
-	kicking and fast hand techniques.", country_id: countryE.id, avatar: Rails.root.join("db/images/TaeKwonDo.jpg").open)
+	kicking and fast hand techniques.", country_id: countryE.id, avatar: Rails.root.join("db/images/tae-kwon-do.jpg").open)
 
 styleK = FightStyle.create!(name: "Muay Thai", description: "Muay Thai or Thai boxing is the cultural martial art of Thailand. The origin of Muay Thai dates back several hundred years, and was 
   developed as a form of close-combat that used the entire body as a weapon. Each appendage used mimics a weapon of war. The hands become the sword and dagger; the shins and forearms are hardened in training
